@@ -1,0 +1,82 @@
+/[@@Format]
+[h=Organizing your Notes:]
+[h2=Comments:]/
+"According to wikipedia: "\""In computer programming, a comment is a programmer-readable explanation or annotation in the source code of a computer program. They are added with the purpose of making the source code easier for humans to understand, and are generally ignored by compilers and interpreters."\"
+
+Basically, this is a way to write information visible in the code but hidden in the viewer window.
+[cd='[/Formula to get the area of a sphere using its radius:]
+[getArea#=4*[pi]*[r!]*[r!]]']/
+The first line is ignored by the viewer in this example.
+
+[h2=Hidden containers:]/
+Sometimes you might want to do something to a container but not show it. You can just add a '"/"' before the container to make it work this way:
+[cd="/[pi#=3.141592653589793]
+[/Formula to get the diameter of a sphere using its radius:]
+/[getDiameter#=[r!]*2]
+[/Formula to get the area of a sphere using its radius:]
+/[getArea#=4*[pi]*[r!]*[r!]]
+/[getData=/
+	Radius of [celestialBody] \= [r] km.
+	Diameter \= [getDiameter!]km
+	Area \= [getArea!]km'²'
+]
+/[celestialBody=the Moon]/[r#=1737.5]
+[getData!]
+/[celestialBody=the Sun]/[r#=695508]
+[getData!]
+/[celestialBody=Earth]/[r#=6371.0084]
+[getData!]"]/
+[box=/
+/[pi#=3.141592653589793]
+/[getDiameter#=[r!]*2]
+/[getArea#=4*[pi]*[r!]*[r!]]
+/[getData=/
+	Radius of [celestialBody] \= [r] km.
+	Diameter \= [getDiameter!]km
+	Area \= [getArea!]km'²'
+]
+/[celestialBody=the Moon]/[r#=1737.5]
+[getData!]
+/[celestialBody=the Sun]/[r#=695508]
+[getData!]
+/[celestialBody=Earth]/[r#=6371.0084]
+[getData!]
+]/
+All containers are first prepared to receive the correct data, while everything is hidden. At the end you can just change the containers [ms=celestialBody] and [ms=r], then call [ms=getData] to display all the gather data.
+
+[h2=Handling line-breaks:]/
+In some occasions you may want to have line-breaks in your code and not in the output. Or the other way around. Here the '"/"' is once again back to help with this, include it at the end of a line to cancel the line-break.
+[cd='We /
+are /
+/
+together!']/
+[box=We /
+are /
+/
+together!
+]/
+Conversely, you can add line-breaks using '"/n"':
+[cd='We\nare\n\nnot!']/
+[box=We\nare\n\nnot!]/
+
+[[.@Welcome@WritingNotes]^Back to Writing notes.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

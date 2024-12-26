@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../img/plum.png">
+        <title>Plum</title>
+        <link rel="stylesheet" href="./style/app.css">
+        <!-- <link rel="stylesheet" href="src/styling/main.css"> -->
+        <!-- link rel="stylesheet" href="src/styling/tree.css" -->
+        <!-- <link h\ref="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet"> -->
+    </head>
+<body>
+    <div class="app-main-container divided-window">
+        <!-- <img src="https://cldup.com/dTxpPi9lDf.thumb.png">' -->
+        <div class="sidebar">
+            <div id="btns-container" hidden>
+                <button type="button" class="add-node log-btns"> <img class="icon" src = "../img/add_white_24dp.svg" alt="Add"/> </button>
+                <button type="button" class="rmv-node log-btns"> <img class="icon" src = "../img/delete_outline_white_24dp.svg" alt="Delete"/> </button>
+                <button type="button" class="rfs-node log-btns"> <img class="icon" src = "../img/refresh_white_24dp.svg" alt="Refresh"/> </button>
+                <button type="button" class="sav-node log-btns"> <img class="icon" src = "../img/content-save.svg" alt="Save"/> </button>
+            </div>
+            <div class="hl" hidden></div>
+            <div class="sidebar-nodes"></div>
+        </div>
+        <div class="vl division-bar" draggable="true"></div>
+        <div class="app-content">
+            <div class="subdiv-panel">
+                <!-- rows="12" cols="35" -->
+                <textarea id="ast-source"></textarea>
+                <div class="vl"></div>
+                <div class="app-content-final darktext" id="parsed-text"></div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script>const exports = {};</script>
+    <script src="entryOverride.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/[@@Format]
+[h=Writing Valid Code:]
+It is important to know what can be inside the container\'s content. A  wrong character can trigger an error in the code, displayed by turning the Viewer window red.
+For example, since square brackets '"[ ]"' are use to delimit containers you cannot freely use them as part of a container content.
+[(bx.warn)= Invalid Code:
+[ms="[invalidContainer=These are square brackets: [ ] ]"]]
+There are many characters that work like that. In some cases adding a backslash '"\"' before the character can fix the issue.
+[cd="[validContainer1=These are square brackets: \[ \] ]"]
+This will not work on all cases, so, a safer way to work with special characters is to surround part of the content by either quotes or double quotes:
+[cd='[validContainer2="These are square brackets: [ ] "]'
+"[validContainer3='These are square brackets: [ ] ']"]
+Just keep in mind that combining quotes and double quotes can be a bit confusing sometimes.
+
+Now these rules only work for regular containers with default return types. For advanced container types check [[@AdvancedNoteWriting@ContainerReturns]^this].
+
+[[.@Welcome@WritingNotes]^Back to Writing Notes.]

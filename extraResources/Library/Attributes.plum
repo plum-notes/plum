@@ -1,0 +1,151 @@
+/[h:(tf.h)]
+/[h2:(tf.h[=[level=2]])]
+/[tb:(tb.t[=[rows=[tbRows]]])]
+/[ms:(tf.ms)]
+/[ul:(tf.list[=[ordered&=0]])]
+[h=Attributes Cheat Sheet:]
+/[tbRows=5]
+/[Empty=None]
+[h2=System (sys, system):]/
+[tb=
+	[=Id][=Description][=Parameters][=Example Code][=Example Result]
+	[=Horizontal Line (horizontalLine, hr, hl)]
+	[=Displays a horizontal line before the content.]
+	[Empty]
+	[ms='[(sys.hl)=]']
+	[=[(sys.hl)=]]
+
+	[=Checkbox (checkbox, cb)]
+	[=Displays a checkbox that can be use by the user to activate or deactivate code behaviour. To get the checkbox value use the memory attribute using the name of the checkbox as the memory id.]
+	[Empty]
+	[ms='[cb(sys.cb)=checkbox]']
+	[=[cb(sys.cb)=checkbox]]
+
+	[=Memory (memory, mem)]
+	[=Uses the container id to store the value in memory, useful to use with checkbox values.]
+	[Empty]
+	[ms='Previous checkbox pressed\? [&=[cb(sys.mem)]==true]']
+	[=Previous checkbox pressed\? [&=[cb(sys.mem)]==true]]
+
+	[=Random (random, rnd)]
+	[=Displays a random number between 1 and the number used in the content]
+	[Empty]
+	[ms='Random number between 1 and 100 \=[(sys.rnd)=100]']
+	[=Random number between 1 and 100 \=[(sys.rnd)=100]]
+
+	[=Length (length)]
+	[=Returns the amount of containers inside content.]
+	[Empty]
+	[ms='[colorList=[color=red]+[color=green]+[color=blue]]\nTotal colors: [colorList(sys.length)]']
+	[=[colorList=[color=red]+[color=green]+[color=blue]]\nTotal colors: [colorList(sys.length)]]
+
+]
+[h2=Text Format (tf, textFormat):]/
+[tb=
+	[=Id][=Description][=Parameters][=Example Code][=Example Result]
+	[=Header (header, h)]
+	[=Header text.]
+	[ul=[=level\= Header size level. Default\=1]]
+	[ms='[(tf.h[=[level=3]])=This is a level 3 Title]']
+	[=[(tf.h[=[level=3]])=This is a level 3 Title]]
+
+	[=Bold (bold, b)]
+	[=Bolded text.]
+	[Empty]
+	[ms='This is [(tf.b)=important]']
+	[=This is [(tf.b)=important]]
+
+	[=Underline (underline, u)]
+	[=Underlined text.]
+	[Empty]
+	[ms='I\'m [(tf.u)=underlined]']
+	[=I\'m [(tf.u)=underlined]]
+
+	[=Italic (italic, i)]
+	[=Italic text.]
+	[Empty]
+	[ms='I\'m [(tf.i)=italic]']
+	[=I\'m [(tf.i)=italic]]
+
+	[=Strike (strike, s)]
+	[=Sriked text]
+	[Empty]
+	[ms='[(tf.s)=Don\'t look!]']
+	[=[(tf.s)=Don\'t look!]]
+
+	[=Collapse (clp, cl)]
+	[=Adds an arrow to the content, to collapse everything inside]
+	[Empty]
+	[ms='[(tf.cl)=2[(tf.cl)=3[(tf.cl)=4]]]']
+	[=1[(tf.cl)=2[(tf.cl)=3[(tf.cl)=4]]]]
+
+	[=Outside Link (out)]
+	[=Opens a webpage in your default browser.]
+	[ul=[=source\=the hyperlink target.]]
+	[ms='[(tf.out[=[source="https://wikipedia.org/"]])=The world\'s encyclopedia.]']
+	[=[(tf.out[=[source="https://wikipedia.org/"]])=The world\'s encyclopedia.]]
+
+	[=List (list)]
+	[=Takes each sub-container as an item of a list.]
+	[ul=[=ordered\=Whether this is an ordered list(bullet points) or not(numbers).Default\=false]]
+	[ms='[(tf.list[=[ordered=true]])=
+		[=First item.]
+		[=Second item.]
+	]']
+	[=[(tf.list[=[ordered=true]])=
+		[=First item.]
+		[=Second item.]
+	]]
+]
+
+[h2=Boxes (bx, box):]/
+[tb=
+	[=Id][=Description][=Parameters][=Example Code][=Example Result]
+	[=Box (box, bx, b)]
+	[=Display simple box.]
+	[Empty]
+	[ms='[(bx.b)=This is a simple box]']
+	[=[(bx.b)=This is a simple box]]
+
+	[=Codebox (code)]
+	[=Display code box.]
+	[Empty]
+	[ms='[(bx.code)=This is a code box]']
+	[=[(bx.code)=This is a code box]]
+
+	[=Quote (quote)]
+	[=Display quote box.]
+	[Empty]
+	[ms='[(bx.quote)=This is a quote]']
+	[=[(bx.quote)=This is a quote]]
+
+]
+[h2=Tables (tb, table, tables):]/
+[tb=
+	[=Id][=Description][=Parameters][=Example Code][=Example Result]
+	[=Table (table, t)]
+	[=Generates a simple Table. Each container inside will be a cell of the table.]
+	[ul=
+		[=border\= Width of table border.\nDefault\=1]
+		[=header\= Header type('"top", "left" or "none"').\nDefault\=top]
+		[=rows\= Amount of rows.\nDefault\=3]
+	]
+	[ms='[(tb.t[=[rows=2][border=2]])=
+		[=Product][=Price]
+		[=Pencil][=10]
+		[=Paper][=60]
+		[=Book][=100]
+	]']
+	[=[(tb.t[=[rows=2][border=2]])=
+		[=Product][=Price]
+		[=Pencil][=10]
+		[=Paper][=60]
+		[=Book][=100]
+	]]
+]
+Notes:
+[ul=
+[='To easily access this file just reference it from the library:'[ms='"[@@Attributes]"']]
+[='Some examples may not be accurate inside the boxes.']
+[='In the future attribute functionality may change and also more attributes will be added.']
+]

@@ -1,0 +1,19 @@
+/[@@Format]
+[nb=
+
+[h1=[*InitialBottles=99] bottles of beer]
+
+/[bottlesCount#=[InitialBottles]]
+[[bottlesCount#=[bottlesCount]-1]>2??[mainLyrics!]]/
+
+[/Main Part of the song that repeats:]
+/[*mainLyrics=[#=[bottlesCount]+1]  bottles of beer on the wall, [#=[bottlesCount]+1]  bottles of beer.
+Take one down and pass it around, [bottlesCount] bottles of beer on the wall.\n\n]
+
+[LastPartOfTheSong=1 bottle of beer on the wall, 1 bottle of beer.
+Take one down and pass it around, no more bottles of beer on the wall.
+\nNo more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, [InitialBottles] bottles of beer on the wall.]
+
+]
+/[best=3120]

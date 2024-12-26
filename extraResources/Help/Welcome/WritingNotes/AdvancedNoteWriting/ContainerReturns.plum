@@ -1,0 +1,64 @@
+/[@@Format]
+[h1=Containers Return Types:]
+You might remember simple containers by default have this structure:
+[box=\"Open Bracket\" + \"name\" + \"\=\" + \"content\"]
+However, this isn\'t enough if you want to do something a bit more advanced like a Math Operation or to check if something is [i=true] or [i=false]. Aka, Boolean Operations.
+
+[h2='Math Values (#):']
+"Let's try to do some math:"
+[cd='[add#=100+45]']/
+[box=[add#=100+45]]
+'Notice how the "#=" after the name will change the type of content, therefore will have a different result. In this case is to perform math operations.'
+This content is even more strict than the regular content. It will receive numbers, math characters used correctly('+,-,*,/'), or other containers.
+Here is another example:
+[cd='[=Substraction:]
+[minuend#=58] - [substrahend#=36] \= [difference#=[minuend]-[substrahend]]']/
+[box=[=Substraction:]
+[minuend#=58] - [substrahend#=36] \= [difference#=[minuend]-[substrahend]]]
+
+[h2='Conditional Statements (&):']
+If you are a programmer you should already be familiar with the concepts of Conditional Statements and Boolean Operations. It is not necessary to understand it thoroughly to use them in this program, at least know they are present here.
+So, basically Coditional Statements are like math operations perfomed on true\/false values.
+Let\'s start with some simple examples:
+[cd='[bool1&=100>10]
+[bool2&=10>100]']/
+[box=[bool1&=100>10]
+[bool2&=10>100]]
+Here both lines make a comparison between two numbers, been the first one that produces a [u=true] result, since the value 100 is indeed bigger than 10.
+
+Look at this other example:
+[cd='[bool1&=true]
+[bool2&=false]
+------
+[bool3&=[bool1]||[bool2]]
+[bool4&=[bool1]&&[bool2]]']/
+[box=[bool1&=true]
+[bool2&=false]
+------
+[bool3&=[bool1]||[bool2]]
+[bool4&=[bool1]&&[bool2]]]
+Here bool3 is checking whether bool1 [u=OR] bool2 value is true. That\'s what '"||"' means, in the same way that '"&&"' means [u=AND] in the next line.
+
+Conditional Statements are specially useful in conjunction with [[@Conditions]^conditions] and [[@Loops]^loops], so check them out.
+
+[[.@Welcome@WritingNotes@AdvancedNoteWriting]^Back to Advanced notes.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

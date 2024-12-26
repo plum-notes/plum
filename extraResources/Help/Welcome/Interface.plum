@@ -1,0 +1,14 @@
+/[@@Format]
+[h2=Main Interface]/
+
+[h3=Menu Bar:]/
+The bar on top contains files and nodes editing options.
+
+[h3=Side Panel:]/
+Located to the left, it displays the hierarchical structure of the plum files (nodes). More info [[@FileSystem]^here].
+
+[h3=Editor & Viewer Windows:]/
+The \"source editor\" (Panel in the center) takes the plain text from the user. The \"viewer window\"(This window) outputs the formated data. If there is an error throughout this process this window will be tinted red.
+You can switch between different views by pressing [u=Ctrl+Space] multiple times. Feel free to try it now.
+
+[[.@Welcome]^Back to Introduction.]

@@ -1,0 +1,26 @@
+[/
+Hello from the Editor Window. The right way to read this documentation is through the Viewer Window (Panel to the right), if you can't see it keep pressing Ctrl+SPACE until it appears.
+
+        -------------->
+
+]/
+[[[@@Format]^]==false?[sdf(bx.warn)=Default Library not set. More info [[@Welcome@Library]^here].
+
+]]/
+/[@@Format]
+[h=Introduction]
+'Plum Notes is a software application for organizing and taking notes. It uses its own markup-like language that integrates some scripting utilities, useful for more technical annotations or notes with some special functionality.'
+
+Keep in mind, this software is in an early alpha stage and part of its behaviour is bound to change at some point of its development.
+
+[ul=
+	[[@Welcome@Interface]^Interface]
+	[[@Welcome@FileSystem]^File System]
+	[[@Welcome@Library]^Library]
+	[[@Welcome@WritingNotes]^Writing Notes]
+	[[@Welcome@Examples]^Examples]
+]
+
+[(sys.hl)=]/
+
+[(tf.small)=Send your feedback at [(tf.out[=[source="https://twitter.com/plum_notes"]])='@plum_notes'].]

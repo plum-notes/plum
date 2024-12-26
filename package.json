@@ -1,0 +1,60 @@
+{
+  "name": "plum",
+  "version": "0.0.1",
+  "description": "Note taking application.",
+  "main": "dist/main-electron.js",
+  "types": "types",
+  "dependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/lockr": "^0.8.8",
+    "@types/moo": "^0.5.4",
+    "@types/nearley": "^2.11.1",
+    "@types/uglify-js": "^3.17.0",
+    "fs-extra": "^10.1.0",
+    "lockr": "^0.9.0-beta.0",
+    "moo": "^0.5.1",
+    "nearley": "^2.20.1",
+    "path": "^0.12.7",
+    "pegjs": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/jest": "^28.1.3",
+    "@types/node": "^17.0.27",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "copyfiles": "^2.4.1",
+    "electron": "^20.0.3",
+    "electron-packager": "^15.5.1",
+    "eslint": "^8.13.0",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5",
+    "ts-loader": "^9.2.3",
+    "typedoc": "^0.23.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "start": "electron .",
+    "docs": "npx typedoc",
+    "build": "tsc && copyfiles -u 2 _src/html/*.* dist/ && copyfiles -u 2 _src/html/style/*.* dist/ ",
+    "test": "jest",
+    "uglify": "uglifyjs-folder ./dist -eo ./dist --extension .js --config-file ./uglify.json",
+    "dist":     "npm run uglify && npx electron-packager . --platform=linux --arch=x64 --asar --out=./packager --overwrite --extra-resource='./extraResources' && npx electron-packager . --platform=win32 --arch=x64 --asar --out=./packager --overwrite --extra-resource='./extraResources'",
+    "compileGrammar": "nearleyc ./_src/parsing/grammar.ne -o ./_src/parsing/grammar.ts",
+    "compileBuildAndStart": "npm run compileGrammar && npm run build && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "eslintIgnore": [
+    "webpack.config.js",
+    "dist/*"
+  ],
+  "build": {
+    "extraResources": [
+      "./extraResources/**"
+    ]
+  }
+}

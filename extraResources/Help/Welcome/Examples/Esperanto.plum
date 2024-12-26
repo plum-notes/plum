@@ -1,0 +1,46 @@
+[Esperanto=
+[Title(tf.h)=Esperanto]
+[Description=Esperanto is the world\'s most widely spoken constructed international auxiliary language. Created by Warsaw-based ophthalmologist L. L. Zamenhof in 1887, it was intended to be a universal second language for international communication, or \'the international language\' (la lingvo internacia). Zamenhof first described the language in Dr. Esperanto\'s International Language (Esperanto: Unua Libro), which he published under the pseudonym Doktoro Esperanto. Early adopters of the language liked the name Esperanto and soon used it to describe his language. The word esperanto translates into English as \"one who hopes\".]
+]
+
+[(tf.h[=[level=2]])=Simple phrases]
+[Flashcards(tb.mt[=[border=1]])=/
+[Item(tb.r)=[A(tb.h)="English"][B(tb.h)="Esperanto"]]/
+[Item(tb.r)=[A(tb.c)="Hello"][B(tb.c)="Saluton"]]/
+[Item(tb.r)=[A(tb.c)="Yes"][B(tb.c)="Jes"]]/
+[Item(tb.r)=[A(tb.c)="No"][B(tb.c)="Ne"]]/
+[Item(tb.r)=[A(tb.c)="Good morning"][B(tb.c)="Bonan matenon"]]/
+[Item(tb.r)=[A(tb.c)="Good evening"][B(tb.c)="Bonan vesperon"]]/
+[Item(tb.r)=[A(tb.c)="Good night"][B(tb.c)="Bonan nokton"]]/
+[Item(tb.r)=[A(tb.c)="Goodbye"][B(tb.c)="Ĝis (la revido)"]]/
+[Item(tb.r)=[A(tb.c)="What is your name?"][B(tb.c)="Kio estas via nomo?"]]/
+[Item(tb.r)=[A(tb.c)="My name is Marco."][B(tb.c)="Mia nomo estas Marko"]]/
+[Item(tb.r)=[A(tb.c)="How are you?"][B(tb.c)="Kiel vi fartas?"]]/
+[Item(tb.r)=[A(tb.c)="I am well."][B(tb.c)="Mi fartas bone"]]/
+[Item(tb.r)=[A(tb.c)="Do you speak Esperanto?"][B(tb.c)="Ĉu vi parolas Esperanton?"]]/
+[Item(tb.r)=[A(tb.c)="I don't understand you"][B(tb.c)="Mi ne komprenas vin"]]/
+[Item(tb.r)=[A(tb.c)="All right/Okay"][B(tb.c)="Bone / En ordo"]]/
+[Item(tb.r)=[A(tb.c)="Thank you"][B(tb.c)="Dankon"]]/
+[Item(tb.r)=[A(tb.c)="You're welcome"][B(tb.c)="Ne dankinde / Nedankinde"]]/
+[Item(tb.r)=[A(tb.c)="Please"][B(tb.c)="Bonvolu / Mi petas"]]/
+[Item(tb.r)=[A(tb.c)="Forgive me/Excuse me"][B(tb.c)="Pardonu min"]]/
+[Item(tb.r)=[A(tb.c)="Bless you!"][B(tb.c)="Sanon!"]]/
+[Item(tb.r)=[A(tb.c)="Congratulations!"][B(tb.c)="Gratulon!"]]/
+[Item(tb.r)=[A(tb.c)="I love you"][B(tb.c)="Mi amas vin"]]/
+[Item(tb.r)=[A(tb.c)="One beer, please"][B(tb.c)="Unu bieron, mi petas"]]/
+[Item(tb.r)=[A(tb.c)="Where is the toilet?"][B(tb.c)="Kie estas la necesejo?"]]/
+[Item(tb.r)=[A(tb.c)="What is that?"][B(tb.c)="Kio estas tio?"]]/
+[Item(tb.r)=[A(tb.c)="That is a dog"][B(tb.c)="Tio estas hundo"]]/
+[Item(tb.r)=[A(tb.c)="We will love!"][B(tb.c)="Ni amos!"]]/
+[Item(tb.r)=[A(tb.c)="Peace!"][B(tb.c)="Pacon!"]]/
+[Item(tb.r)=[A(tb.c)="I am a beginner in Esperanto."][B(tb.c)="Mi estas komencanto de Esperanto"]]/
+]
+
+
+source \= [source(tf.out)='https://en.wikipedia.org/wiki/Esperanto']
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+/[@@Format]
+[h1=Containers:]
+[h2=The basics:]
+[ContainerDescription=Containers are the central piece of Plum\'s functionality. They encapsulate and store data for easier manipulation.]
+For example:
+[(bx.code)='[quote='[.@Welcome@Examples@Quote.quote]']']/
+/[source=Captain Jean-Luc Picard.]
+
+Notice how the whole thing is surrounded by brackets, \"[(tf.code)='[]']\". Inside it\'s the name of the container, \"[(tf.code)='quote']\", followed by an equal sign, \"[(tf.code)='=']\". Then the content itself. This is the output:
+
+[(bx.box)=[.@Welcome@Examples@Quote.quote]]/
+[(tf.small)=You can see the raw example [[.@Welcome@Examples@Quote]^here].]
+
+[h2=Container References:]
+The container name can be use to reference the container later as many times as you want, just by writing its name between brackets:
+[(bx.code)='[quote=It Is Possible To Commit No Mistakes And Still Lose. That Is Not Weakness, That is life.]
+[quote]
+[quote]
+[quote]']
+Each time a container is referenced their content will be displayed if it has been previously instantiated on the same file. The previous code will result in this:
+[(bx.box)=[4??[.@Welcome@Examples@Quote.quote]
+]]/
+
+[h2=Nested Containers:]
+In this next example there are multiple containers inside one another:
+[(bx.code)="[Example=[title=Sentence Structure:]
+[sentence=[noun=The fruit tree] [verb=grows] [prepositionalPhrase=in the forest].]]
+"]/
+You can still reference any of them no matter how deep they are inside another container:
+[(bx.code)="[Example=[title='Sentence Structure:']
+[sentence=[noun=The fruit tree] [verb=grows] [prepositionalPhrase=in the forest]].]
+
+The previous sentence contains a noun: [noun].
+It also contains a verb: [verb].
+And a prepositional phrase: [prepositionalPhrase].
+This is the entire sentence: [sentence]. 
+"]/
+This is the result:
+[(box.box)=[Example=[title='Sentence Structure:']
+[sentence=[noun=The fruit tree] [verb=grows] [prepositionalPhrase=in the forest]].]
+
+The previous sentence contains a noun: [noun].
+It also contains a verb: [verb].
+And a prepositional phrase: [prepositionalPhrase].
+This is the entire sentence: [sentence]. 
+]
+/[[.@Welcome@WritingNotes@ValidCode]^Next: Writing Valid Code.]
+
+[[.@Welcome@WritingNotes]^Back to Writing notes.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

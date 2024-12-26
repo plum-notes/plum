@@ -1,0 +1,185 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+    color: #ccc;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+}
+.app-main-container{
+    width:100%;
+    max-width: 100%;
+    height:100%;
+    overflow:auto;
+    /* display: flex;
+    min-height: 100vh; */
+    /* -webkit-app-region: drag; */
+}
+.divided-window{
+    display: flex;
+    justify-content:stretch;
+    height:100%;
+    /* width:100%; */
+    /* max-width: 100%; */
+    /* overflow-x:auto; */
+    /* grid-template-columns: min-content min-content min-content;
+    box-sizing: border-box;
+    overflow: visible; */
+    /* border: 2px dotted green;  */
+}
+    .sidebar{
+        min-width: 0px;
+        /* width: 16%;
+        min-width: 5%;
+        max-width: 85%; */
+        /* resize: horizontal; */
+        padding: 4px;
+        font-size:18px;
+    }
+    .subdiv-panel{
+        /* border:1px solid rgb(199, 77, 77); */
+        width:100%;
+        display: flex;
+        justify-content:stretch;
+    }
+        #ast-source:focus{
+            border-width: 0px;
+            min-width: 0px;
+            outline: none;
+        }
+        #ast-source{
+            resize:none;
+            min-width: 0px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            background-color: #222;
+            color: #ccc;
+            /* width: 50%; */
+            /* resize: horizontal; */
+            /* border-width: 1px; */
+            border: none;
+            padding: 16;
+            overflow-x:auto;
+            overflow-y:auto;
+            word-wrap: break-word;
+        }
+        #parsed-text{
+            min-width: 0px;
+            /* border:1px solid rgb(233, 7, 233); */
+            /* word-wrap: break-word; */
+            /* text-overflow:clip; */
+            /*white-space: pre; /*or `pre`
+            min-width: 5px;
+            /* border:1px solid #ccc; */
+            box-sizing: border-box;
+            /* border:1px solid rgb(199, 77, 77); */
+            /* overflow: hidden; */
+            /* width: 100%; */
+            /* overflow-y:visible; */
+            /* white-space: nowrap; */
+            /* overflow-x:scroll; */
+            overflow-x:auto;
+            overflow-y:auto;
+            /* overflow-wrap:break-word; */
+            /* flex: 1 1 0;
+            border-width: 0px;
+            border: none;
+            padding: 16px;
+            color: #ccc;
+            min-width: 5%;
+            max-width: 95%;
+            height: 99vh;
+            box-sizing: border-box; */
+            white-space:break-spaces;
+            /* white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap; */
+            word-wrap: break-word;
+        }
+.division-bar{
+    cursor:ew-resize;
+    direction: 'horizontal';
+    /* position:absolute; */
+}
+.log-btns{
+    background-color:rgb(97, 47, 47);
+    border: none;
+    color: #ccc;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.sidebar, .app-content{
+    overflow-y:visible;
+    overflow-x:hidden;
+    white-space:nowrap;
+    word-wrap: break-word;
+}
+
+
+.app-content{
+    flex: 1 1 0;
+    display: flex;
+    /* max-width: 95%; */
+    /* background-color: rgb(53, 37, 45); */
+}
+
+.vl{/*Vertical line*/
+    width: 3px;
+    min-width: 3px;
+    height: 100%;
+}
+.hl{/*Horizontal line*/
+    width: 100%;
+    height: 3px;
+    min-height: 3px;
+}
+.vl, .hl{
+    background-color: rgba(255, 255, 255, 0.12);
+    align-self: center;
+}
+
+.tree-node{
+    cursor: pointer;
+}
+.tree-node-selected{
+    background-color: rgb(75, 38, 49);
+}
+#btns-container{
+    padding: 12px 4px;
+}
+.sidebar-nodes{
+    padding: 12px 4px;
+}
+.icon{
+    width: 24px;
+    pointer-events: none;
+    color: white;
+    color-scheme: white;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.toggler::before{
+    content: "‣ ";/*229F,25B6,‣*/
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+}
+.toggler.collapsed::before{
+    /* content: "‣";\229E */
+    /* color: #23c37a; */
+    transform: rotate(0deg);
+}
+/*.toggler-content{
+    display: block;
+}*/

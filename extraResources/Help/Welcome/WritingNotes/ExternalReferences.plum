@@ -1,0 +1,69 @@
+/[@@Format]
+[h2=External References:]
+Now that you know what [[.@Welcome@WritingNotes@Containers]^references] are, it is time to go further and get data from other nodes.
+
+You\'ll get the most out of plum if you take the time to structure your notes well. Accessing what you need only when it\'s necessary and avoid writing redundant information.
+
+External references were created with this in mind. You can take any container from other nodes and display them as if they were their own.
+
+Example:
+[cd='[@Containers.ContainerDescription]']
+The container starts with '"@"' indicating that the next word is the name of the node(plum file in the hierarchy) to use as reference, in this case: \"Containers\". Notice in the hierarchy that there is a [[@Containers]^node called \"Containers\"] on the same level as this node (\"ExternalReferences\"). That is the file that will be taking the container content from.
+Then there is a  dot (\".\"), and the word \"ContainerDescription\". That is the actual name of the container we\'ll be referencing. Without this part we would be displaying the entire node.
+This is the result of the code:
+
+[(bx.box)=[@Containers.ContainerDescription]]
+You usually want to stay in the same level or below your current node, but it is possible to go up to the root folder of the project by adding a dot(\".\") before the '"@"' character:
+[cd='[.@Welcome@Examples@Quote]']
+This will display this:
+[(bx.box)=[.@Welcome@Examples@Quote]]
+Which is exactly what is in that file.
+You might have notice there multiple '"@"' characters in this last example. Each one goes further into the file hierarchy of the project.
+
+[warn=Watch out for container references wich themselves reference other containers. If done without proper care, it might eventually cause an infinite loop, crashing the application.]
+
+[h2=Library References:]
+I hope you remember what [[.@Welcome@Library]^the library] is. Accessing it is very similar to accessing regular external references.
+
+If you have been paying attention to the documentation source files, you might have notice this line at the beginning of some nodes:
+
+[cd='/[@@Format]']
+Let\'s forget for a moment the slash at the beginning. Inside the container is this: '"@@"', pointing out that the next word is the name of the node inside the library, subsequently accessing nested nodes and containers would work just as regular external references explained earlier in this documentation.
+
+Remember that the library can be accessed just as a regular project so feel free to explore its content and make changes if you need to.
+
+The default library contains templates and utilities you can use in your projects, the \"Format\" node is one you might find useful, you can check more information about it and other library nodes [[.@WorkInProgress]^here].
+
+If you are still wondering about the slash before the container there is more information abut hidden containers [[@OrganizingCode]^here].
+
+[h2=Links:]
+Links are similar to References, the difference is that instead of receiving the information of the node, it creates a clickable link that takes the user to it. Let\'s see an example:
+
+[cd='[[.@Welcome@Examples@Esperanto]^Esperanto]']
+
+This will show up in the Display Window:
+
+[(bx.box)=[[.@Welcome@Examples@Esperanto]^Esperanto]]
+
+'The word "Esperanto" should be in color blue, indicating the link to another node. It showing in color red would mean there was an error creating such link.'
+Keep in mind that you cannot link to Library nodes since they are not really part of the current project.
+
+
+[[.@Welcome@WritingNotes]^Back to Writing notes.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

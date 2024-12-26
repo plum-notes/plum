@@ -1,0 +1,53 @@
+/[@@Format]
+[h1=Instantiation:]
+Instantiation is the initial creation of a node. By default this is the first node that uses a new name:
+
+[h2=Manual Instantiation:]
+Having the default container as the instantiation is good enough for most cases. But it\'s important to know that this behaviour can be easily changed.
+First let\'s take a look at this example:
+[cd='[container]
+---
+[container=a]
+[container=b]
+[container=c]
+[container=d]']
+[box=[container]
+---
+[container=a]
+[container=b]
+[container=c]
+[container=d]]
+Notice how the first reference takes the value of \'a\' which is assigned below. Let\'s make a little change:
+[cd='[container]
+---
+[container=a]
+[container=b]
+[*container=c]
+[container=d]']
+[/The name was changed to 'container3' because 'container' as already a container in use, wouldn't need to use an instantiation to reference]
+[box=[container3]
+---
+[container3=a]
+[container3=b]
+[*container3=c]
+[container3=d]]
+Here we were able to change the instantiation further in the code.
+
+Why is this useful to know\?
+For two main reasons:
+[ol=
+	[=If you reference a container that haven\'t been created yet, it will instead look for the instantiation.]
+	[=External References always takes the instantiation.]
+]
+
+[[.@Welcome@WritingNotes@AdvancedNoteWriting]^Back to Advanced notes.]
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+/[@@Format]
+[h1=More on References:]
+[h2=Rebuilding:]
+Let\'s take a look at this example:
+[cd=/
+'[box=var1\=[var1#=40]
+var2\=[var2#=10]
+[sum=sum\=[#=[var1]+[var2]]]
+var2\=[var2#=60]
+[sum]'
+]/
+Analizing the previous example, it might seem that the last line should give '"100"' as a result, let\'s take a look:
+[box=var1\=[var1#=40]
+var2\=[var2#=10]
+[sum=sum\=[#=[var1]+[var2]]]
+var2\=[var2#=60]
+[sum]
+]/
+It doesn\'t. That\'s because when referencing a container that has already been executed it doesn\'t get executed again. Instead the result is been stored and displayed as is been referenced. This behaviour is useful in most cases, but just like the last example, what if you need the container to be executed again. Well, that\'s simple:
+[cd='[sum!]']/
+'The "!" should do the trick:'
+[box=[sum!]
+]/
+
+[h2=Cloning:]
+Sometimes you might need to make a copy of a container, and a reference is not enough cause you don\'t want to change the value. That\'s what cloning is used for.
+Let\'s take a look:
+[cd=/
+'[a1=123[b1=456]]
+/[c1*=[a1]]
+[c1]
+[c1.b1]'
+]/
+'The "*" indicates you are cloning the container.'
+[box=/
+[a1=123[b1=456]]
+/[c1*=[a1]]
+[c1]
+[c1.b1]
+]
+[[.@Welcome@WritingNotes@AdvancedNoteWriting]^Back to Advanced notes.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+/[@@Format]
+[h2=Writing Notes]
+Plum Notes has its own language informally called PlumScript. It was born of the need for a note taking program capable of some coding functionality, but at the same time to be easy enough for non-technical users to understand its main basic characteristics.
+
+Basic Concepts:
+
+[ul=
+	[[@WritingNotes@Containers]^Containers]
+	[[@WritingNotes@ValidCode]^Valid Code]
+	[[@WritingNotes@ExternalReferences]^External References]
+	[[@WritingNotes@Attributes]^Attributes]
+	[[@WritingNotes@OrganizingNotes]^More on Writing Notes]
+	[[@WritingNotes@AdvancedNoteWriting]^Advanced Node Writing]
+]
+
+[[.@Welcome]^Back to Introduction.]

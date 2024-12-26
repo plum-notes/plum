@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .main   {
+            padding: 2px 16px;
+            border:1px solid rgb(255, 255, 255);
+            width: 380px;
+            height: 200px;
+            margin: 10px;
+        }
+        h3{
+            padding: 4px;
+            margin: 10px;
+        }
+        .cancel-button,.send-button{
+            background-color:rgb(97, 47, 47);
+            border: none;
+            color: #ccc;
+            padding: 10px 8px;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+            margin: 16px;
+            cursor: pointer;
+            font-size: 20px;
+            width: 100px;
+            height: 42px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="main">
+        <center><h3>Create Node</h3></center>
+        <form>
+            <label>Node name:</label>
+            <input type="text" id="name" name="name"><br>
+            <input type="checkbox" class="is-child" name="is-child" id="is-child">
+            <label for="is-child"> As child node</label>
+            <center>
+                <input type="submit" class="cancel-button"value="Cancel">
+                <input type="submit" class="send-button"value="Create">
+            </center>
+        </form>
+    </div>
+    <!-- SCRIPTS -->
+    <script>var exports = {};</script>
+    <script src="./windows/newNodeWindow.js"></script>
+</body>
+</html>

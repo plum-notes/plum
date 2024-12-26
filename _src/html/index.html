@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/plum.png">
+    <title>Plum</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <!-- link rel="stylesheet" href="src/styling/tree.css" -->
+    <title>Plum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1 style="text-align: center;" hidden><img class="fit-picture"
+        src="../img/plum.png"
+        alt="Plum Icon" hidden>Plum</h1>
+    <div id=log-btns-cont>
+        <button id="log-ast-button" class="log-btns">Ast</button>
+        <button id="log-reg-button" class="log-btns">Reg</button>
+        <button id="log-run-button" class="log-btns">Run</button>
+        <button id="log-err-button" class="log-btns">Err</button>
+    </div>
+    <div class="main-container">
+        <textarea id="ast-source" rows="12" cols="35" class="darktext mainText"></textarea>
+        <div id="parsed-text" class="darktext  mainText" ></div>
+    </div>
+    <div id="bottom-menu" class="tiny-text">
+        <small>Auto:<input type="checkbox" id="auto-parse" checked></small>
+        <small>Live Errors:<input type="checkbox" id="error-check" checked></small>
+        <button id="reset-button" class="log-btns">Reset</button>
+        <button id="init-button" class="log-btns">Init</button>
+    </div>
+    <!-- button id="add-text-button" class="log-btns">+Text</button-->
+    <!-- button id="add-node-button" class="log-btns">+Node</button-->
+    
+
+
+    <!-- SCRIPTS -->
+    <script>var exports = {};</script>
+    <!-- <script src="../bundle.js"></script> -->
+    <script src="entryOverride.js"></script>
+</body>
+</html>

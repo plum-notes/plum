@@ -1,0 +1,16 @@
+/[@@Format]
+[h1=Advanced Note Writing:]
+All previous documentation should be enough to help you write useful notes for your projects, but if you really want to take full advantage of the software, this is the way to go.
+
+Keep in mind that part of the functionality you might want to implement using the advanced features, may be available as templates in the Default Library. So you might want to check that out as well before you start writing your advanced notes from scratch.
+
+[ul=
+	[[@AdvancedNoteWriting@ContainerReturns]^Containers Return Types]
+[[@AdvancedNoteWriting@AdvancedReferences]^Advanced References]
+[[@AdvancedNoteWriting@AnonymousContainers]^Anonymous Containers]
+[[@AdvancedNoteWriting@Conditions]^Conditions]
+[[@AdvancedNoteWriting@Loops]^Loops]
+[[@AdvancedNoteWriting@Instantiation]^Instantiation]
+]
+
+[[.@Welcome@WritingNotes]^Back to Writing notes.]

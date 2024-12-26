@@ -1,0 +1,10 @@
+/[@@Format]
+[h1=Anonymous Containers:]
+As you might have guessed, Anonymous Containers don\'t have names or ids. Something like this:
+[cd='[=Hi, I don\'t have a name :(]']
+[box=[=Hi, I don\'t have a name :(]]
+You might be wondering what\'s the point of Anonymous Containers then\?
+The thing is, you don\'t only need containers to reference them later. Just been a container will indicate the program that this is a special unit, and in conjunction with [[.@Welcome@WritingNotes@Attributes]^Attributes], plum can use the container delimitations to know how to apply attribute functionality.
+Check [[.@Welcome@WritingNotes@Attributes]^Attributes] for more information.
+
+[[.@Welcome@WritingNotes@AdvancedNoteWriting]^Back to Advanced notes.]

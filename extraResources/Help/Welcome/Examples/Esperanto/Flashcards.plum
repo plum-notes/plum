@@ -1,0 +1,5 @@
+[h3=Esperanto Flashcards]
+/[.@Welcome@Examples@Esperanto.Flashcards]
+[displayAll(sys.cb)= All\?]
+[hl(tf.hl)]
+[[displayAll(sys.mem)]?[@@Flashcards.All]?[@@Flashcards.Random]]

@@ -1,0 +1,56 @@
+/[@@Format]
+[h1=Conditions:]
+This is a container that uses a [[@ContainerReturns]^Conditional Statement] to determine if it should be executed or just ignored.
+
+Conditions are useful for branching your notes behaviour, so you are able to generate smarter notes.
+
+Example:
+[cd='[value=25]
+[[value]<100?The value is lower than 100]
+[[value]>1000?The value is higher than 1000]']/
+[box=[value=25]
+[[value]<100?The value is lower than 100]
+[[value]>1000?The value is higher than 1000]]/
+
+Here only the statement: '"The value is lower than 100"' is displayed. This is because the Conditional Statement: [ms='"[value]<100"'] is resolving to a TRUE value.
+
+Notice that in order to use conditions you shuld be using a '"?"' instead of '"="'. And the first part of the container is not a name but a conditional statement.
+
+Here is another example:
+[cd='/[greenLight&=false]
+Stop car\?
+[[greenLight]?No?Yes]']/
+[box=/[greenLight&=false]
+Stop car\?
+[[greenLight]?No?Yes]]
+This example is a bit different. Here there are two '"?"' characters instead of one. This means that if the Conditional Statement is true it will do whatever is after the first '"?"', otherwise it will go straight for the second one. In programming this is known as an [ms=if-then-else] construct. 
+
+[[.@Welcome@WritingNotes@AdvancedNoteWriting]^Back to Advanced notes.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+/[@@Format]
+[h1=Loops:]
+Sometimes you might need to repeat information in you notes. Using loops can be helpful to make this process simpler.
+[cd='Around the World (Daft Punk):\n
+[18??[4??Around the world, around the world.\n]\n]']/
+[box=Around the World (Daft Punk):\n
+[18??[4??Around the world, around the world.\n]\n]]
+The first number is the times the content is repeated. The content is separated with '"??"', indicating this is a loop. In the example above there is a loop inside another repeating the phrase four times then adding a line-break, then repeating that eighteen times to complete the entire song.
+
+There are times where you don\'t really know the number of times the loop will repeat. For this, similarly to [[@Conditions]^Conditions], you can use [[@ContainerReturns]^Conditional Statements] instead to iterate until its value is false.Just watch out for endless loops.
+Check [[.@Welcome@Examples@Bottles]^this] for a more elaborate example.
+
+[[.@Welcome@WritingNotes@AdvancedNoteWriting]^Back to Advanced notes.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

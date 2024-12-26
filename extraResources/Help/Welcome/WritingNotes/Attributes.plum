@@ -1,0 +1,68 @@
+/[@@Format]
+[h=Attributes:]
+Plum is not just to store and reference text. This application has available different text format options to dress up your notes and to give them some additional functionality.
+
+Let\'s start by underlining some text:
+[cd='This [VeryImportantWord(textFormat.underline)=word] is important.']
+Will display:
+[box=This [VeryImportantWord(textFormat.underline)=word] is important.]
+As you can see, after the container name, whatever is inside round brackets '"( )"' will give the container some special modifications. In this case it will take the \"textFormat\" module and use its \"underline\" attribute.
+
+It is a bit wordy, so let\'s simplify the attribute a little bit:
+[cd='This [important(tf.u)=word] is important.']
+This will have the exact same result. Just know that for your convenience there are multiple ways to write modules and attributes. More of this later.
+
+[h2=Attribute Parameters:]
+Here is another example:
+[cd='[h(tf.h)=Headline 1]
+[h2(tf.h[attributeOptions=[level=2]])=Headline 2]
+[h3:(tf.h[=[level=3]])]
+[h3=Headline 3]']/
+
+[box=[h(tf.h)=Headline 1]
+[h2(tf.h[attributeOptions=[level=2]])=Headline 2]
+[h3:(tf.h[attributeOptions=[level=3]])]
+[h3=Headline 3]]
+
+The first attribute is not that different from the first example, is it\?
+
+Now notice how the second headline has this new part: \"[ms='[attributeOptions=[level=2]]']\". These are the parameters, in this case they\'ll indicate the size level of the headline. Here the default value is \'1\', that\'s why the first headline didn\'t need any parameters. More on how to build parameters later.
+
+Let\'s look at the third line of the previous example: \'[ms='[h3:(tf.h[attributeOptions=[level=3]])]']\'. It follows this structure: \'name + : + attributes\'. What this does is assign the attribute to the container, so in the next line the attribute is applied just by using that same name of the container.
+
+This last headline was a bit tricky, isn\'t it\? Well, the good news is that the default library has some utilities that do this automatically:
+[cd='/[@@Format]
+[h=Attributes:]']
+[box=[h=Attributes:]]
+Here, the first line imports the Format utility from the library, more info [[@ExternalReferences]^here].
+
+Internally the Format utility does exactly that to multiple containers, which is basically what the last headline was doing:
+[cd='[h:(tf.h)]']
+You just need to know the name used by the library files(in this case \'h\') for the available attributes. So make sure to check the library.
+
+All modules, attributes and parameters, can be found [[@WorkInProgress]^here].
+
+
+[[.@Welcome@WritingNotes]^Back to Writing notes.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

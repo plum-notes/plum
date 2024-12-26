@@ -1,0 +1,34 @@
+[Instructions='Instructions: import "All" to work with all flashcards or import "Random" to get a single randomly generated flashcard at the time.
+Flashcards must have this format:'
+[(tf.ms)='[Flashcards=
+	[Item=[A=first concept]-[B=first concept side b]]
+	[Item=[A=second concept]-[B=second concept side b]]
+]']]
+
+
+/[Flashcards=
+[Item=[A=1]-[B=a]]
+[Item=[A=2]-[B=b]]
+[Item=[A=3]-[B=c]]
+]/
+[All=/
+[cb(sys.cb)= Other side]
+/[Flashcards(sys.filter[=[id=Item][overwrite&=1][goInside&=1]])]/
+/[cardIndex#=0]/
+[Card=[[cardIndex#=[cardIndex]+1]<[Flashcards(sys.length)]??[[cb(sys.mem)]?[Flashcards.[cardIndex].B]?[Flashcards.[cardIndex].A]]
+]]/
+[cb(sys.cb)= Other side]
+]
+[Random=/
+/[=
+[buttonPressed&=[btn(sys.mem)]]
+/[currentCardValue:=[currentCard(sys.mem)]] 
+[cardInMem&=[currentCardValue]=?]
+[ChangeCard&=[&=![cardInMem]]||[buttonPressed]]
+--[ChangeCard]--
+
+[[ChangeCard]?[currentCard(sys.mem, sys.rnd)#=[Flashcards(sys.length)]]?[currentCard(sys.mem)#=[currentCardValue]](No change)]
+]
+[Card=[[cb(sys.mem)]?[Flashcards.[currentCard].B]?[Flashcards.[currentCard].A]]]
+[btn(sys.btn)=Random flashcard][cb(sys.cb)= Other side]
+]

@@ -1,0 +1,127 @@
+
+@font-face {
+    font-family: defaultFont;
+    src: url(Rubik-Regular.ttf);
+}
+body{
+    background-color: #161616;
+    color: #ccc;
+    font-family: defaultFont;
+    font-size: 22px;
+}
+.main-container{
+    display: flex;
+    justify-content:center;
+}
+.darktext{
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    padding: 16;
+}
+.error-text{
+    color: rgb(219, 92, 92);
+}
+.mainText{
+    flex-grow: .2;
+    margin: 1px 10px;
+    width: 300px;
+}
+#original-text,#ast-tree{
+    resize: none;
+    min-width: 300px;
+    height: 350px;;
+    max-height: none;
+    border-radius: 10px;
+    border: none;
+}
+#parsed-text{
+    resize: none;
+    background-color: #333;
+    /*color: #ccc;*/
+    min-width: 100px;
+    border-radius: 10px;
+    tab-size: 8;
+}
+#bottom-menu{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+#log-btns-cont{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.error{
+    color: red;
+}
+.log-btns{
+    background-color:rgb(97, 47, 47);
+    border: none;
+    color: #ccc;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    margin: 0px;
+}
+.log-btns:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+}
+.log-btns:active{
+    background-color: #121212;
+    border: #ccc;
+    border-width: 1px;
+    border-style: solid;
+}
+.tiny-text{
+    font-size: 12px;
+}
+.selected-text{
+    border-style:none;
+    border-color: #ccc;
+    border-width: 1px;
+    background-color: rgb(86, 29, 139);
+}
+.plum-text{
+    color: rgb(255, 255, 255);
+    background-color: #222;
+    display:inline;
+    border: #f7f7f7;
+    border-style: none;
+}
+.plum-btn{
+    background-color: rgb(75, 6, 34);
+    border-style:solid;
+    border-radius: 6px;
+    color: #ccc;
+    border-style: solid;
+    border-color: #161616;
+    min-height: 2em;
+    margin: 0px;
+    display: inline-block
+}
+.plum-btn:hover{
+    background-color: #161616;
+}
+.plum-editor{
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #ccc;
+    display:inline; /*flow-root;*/
+    background-color: #333333;
+}
+.toggler::before{
+    content: "\229F";/*229F*//*25B6*/
+    /*transform: rotate(11deg);*/
+    cursor: pointer;
+}
+.toggler.collapsed::before{
+    content: "\229E";
+    transform: rotate(11deg);
+}
+/*.toggler-content{
+    display: block;
+}*/

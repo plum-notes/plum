@@ -1,0 +1,12 @@
+/[@@Format]
+[h2=Library]/
+
+The library is like a global project, which all other projects have access to. This is useful to store commonly used functionality, or pieces of data you might need often.
+
+On the menu bar you can find the library options ([u='File > Library']). Generating a new library will make a new Folder "'Library'" which will be filled with some utilities you might find helpful. You can delete any file in the library if you want. Just keep in mind this help project uses some of those files to function as intended.
+
+The library can be opened and use as any other project, so feel free to check it out and edit it as you find more useful.
+
+[[@WritingNotes@ExternalReferences]^More info on accessing the library.]
+
+[[.@Welcome]^Back to Introduction.]
